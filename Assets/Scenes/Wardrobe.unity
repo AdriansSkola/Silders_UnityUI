@@ -252,8 +252,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d4c319b1a29c06f41a71bced702b2b60, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -625,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 78}
+  m_AnchoredPosition: {x: -262, y: 75}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502459316
@@ -678,12 +678,26 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Male
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 865b45a657413eb4c89ab114883ceea4, type: 3}
     - m_Text: Female
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: afa59b94e60bfe749bb219893bd6c907, type: 3}
+    - m_Text: Goblin
+      m_Image: {fileID: 21300000, guid: 660e691b7c543d844b2a8e36c8584d95, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 591519145}
+        m_TargetAssemblyTypeName: ImageScript, Assembly-CSharp
+        m_MethodName: changeImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &502459317
 MonoBehaviour:
@@ -863,6 +877,7 @@ GameObject:
   - component: {fileID: 591519143}
   - component: {fileID: 591519142}
   - component: {fileID: 591519144}
+  - component: {fileID: 591519145}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -926,6 +941,23 @@ MonoBehaviour:
   inputNameField: {fileID: 2089602765}
   inputAgeField: {fileID: 423875039}
   DisplayField: {fileID: 823308193}
+--- !u!114 &591519145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591519140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635fcc52f532b2e4cb2611c4cfbbc2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharHolder: {fileID: 716893768}
+  SpriteArray:
+  - {fileID: 21300000, guid: 865b45a657413eb4c89ab114883ceea4, type: 3}
+  - {fileID: 21300000, guid: afa59b94e60bfe749bb219893bd6c907, type: 3}
+  - {fileID: 21300000, guid: 660e691b7c543d844b2a8e36c8584d95, type: 3}
 --- !u!1 &603837952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,8 +1146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -18}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -266, y: -47}
+  m_SizeDelta: {x: 120, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716893770
 MonoBehaviour:
@@ -1137,9 +1169,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 865b45a657413eb4c89ab114883ceea4, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

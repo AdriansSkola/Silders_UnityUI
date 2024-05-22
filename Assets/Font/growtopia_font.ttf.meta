@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7fb9a8b6710dbca4d9e15f73ab3a82a2
+guid: 1cb5088fc8f6f024f9ac5cf899ce450f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Andy
+  - Century Gothic
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
