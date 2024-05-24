@@ -35,11 +35,14 @@ public class ImageScript : MonoBehaviour
     public Slider WidthPants;
     public Slider HeightBoards;
     public Slider WidthBoards;
+    public Slider HeightPlayer;
+    public Slider WidthPlayer;
 
     public GameObject[] hairObjects;
     public GameObject[] shirtObjects;
     public GameObject[] pantsObjects;
     public GameObject[] boardsObjects;
+    public GameObject[] playerObjects;
 
     public void showHair(bool value)
     {
@@ -118,6 +121,17 @@ public class ImageScript : MonoBehaviour
         foreach (GameObject board in boardsObjects)
         {
             board.transform.localScale = new Vector3(1.0f * boardSizeH, 1.0f * boardSizeW, 1);
+        }
+    }
+
+    public void ChangeSizePlayer()
+    {
+        float playerSizeH = HeightPlayer.value;
+        float playerSizeW = WidthPlayer.value;
+
+        foreach (GameObject player in playerObjects)
+        {
+            player.transform.localScale = new Vector3(1.0f * playerSizeH, 1.0f * playerSizeW, 1);
         }
     }
 }
