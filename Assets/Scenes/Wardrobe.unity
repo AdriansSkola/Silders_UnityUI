@@ -1124,8 +1124,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0.0009977788, y: -0.0006225833}
+  m_SizeDelta: {x: -16.0015, y: 280.3058}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &254904801
 MonoBehaviour:
@@ -2178,6 +2178,7 @@ GameObject:
   - component: {fileID: 502459318}
   - component: {fileID: 502459317}
   - component: {fileID: 502459316}
+  - component: {fileID: 502459319}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -2326,6 +2327,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502459314}
   m_CullTransparentMesh: 1
+--- !u!114 &502459319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502459314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4e531cb2532664fb783b74cac32a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dropdown: {fileID: 502459316}
+  charInfo: {fileID: 254904801}
+  maleInfo: Male was no ordinary player. He bore the coveted Legendary Title, a badge
+    of honor earned through trials and valor. To obtain it, he had completed the
+    Quest of Honor, unraveling cryptic riddles, battling fearsome monsters, and collecting
+    rare artifacts.
+  femaleInfo: "The Legendary Title was more than a mere accolade; it was a promise
+    of destiny. Seraphina\u2019s heart burned with the desire to prove herself, to
+    transcend the constraints of her birthright."
 --- !u!1 &558339005
 GameObject:
   m_ObjectHideFlags: 0
@@ -8017,8 +8039,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1975534693}
   m_HandleRect: {fileID: 1975534692}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.32666665
+  m_Value: 1.0000033
+  m_Size: 0.3496182
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
